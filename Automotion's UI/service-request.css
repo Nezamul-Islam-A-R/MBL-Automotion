@@ -13,6 +13,28 @@ body {
     margin: auto;
 }
 
+::placeholder {
+    text-align: center;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+ :-moz-placeholder {
+    /* Firefox 18- */
+    text-align: center;
+}
+
+ ::-moz-placeholder {
+    /* Firefox 19+ */
+    text-align: center;
+}
+
+ :-ms-input-placeholder {
+    text-align: center;
+}
+
 .w-100 {
     width: 100%!important;
     height: 100vh;
@@ -199,10 +221,11 @@ input {
     margin-bottom: 10%;
 }
 
-span {
+
+/* span {
     border-right: .05em solid;
     animation: caret 3s steps(3) infinite;
-}
+} */
 
 @keyframes caret {
     50% {

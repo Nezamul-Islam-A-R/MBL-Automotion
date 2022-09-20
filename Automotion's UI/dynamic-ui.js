@@ -9,9 +9,9 @@ Array.from(radios).forEach(function(r) {
     r.addEventListener('click', function() {
         var priceEl = document.getElementById('specifyReasonField');
         if (this.id == 'inlineRadio3')
-            priceEl.removeAttribute('disable');
+            priceEl.removeAttribute('disabled');
         else
-            priceEl.setAttribute('disable', 'disable');
+            priceEl.setAttribute('disabled', true);
     });
 });
 
