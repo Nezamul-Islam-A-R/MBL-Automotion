@@ -13,26 +13,42 @@ body {
     margin: auto;
 }
 
+input#radionButton {
+    transform: scale(.8);
+}
+
+th,
+td,
+label,
+select,
+option {
+    font-size: 12px!important;
+}
+
+.generic-text-size {
+    font-size: 12px!important;
+}
+
 ::placeholder {
-    text-align: center;
+    text-align: left;
 }
 
 ::-webkit-input-placeholder {
-    text-align: center;
+    text-align: left;
 }
 
  :-moz-placeholder {
     /* Firefox 18- */
-    text-align: center;
+    text-align: left;
 }
 
  ::-moz-placeholder {
     /* Firefox 19+ */
-    text-align: center;
+    text-align: left;
 }
 
  :-ms-input-placeholder {
-    text-align: center;
+    text-align: left;
 }
 
 .w-100 {
