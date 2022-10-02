@@ -153,45 +153,34 @@
 
                             <div class="card top-margin">
                                 <div class=" card-padding">
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <h6>Request For</h6>
-                                        </div>
-                                    </div>
                                     <div class="col-sm-12">
                                         <div class="row">
-                                            <div class="col-sm-4">
-                                                <select style="height: 30px" class="form-select" id="id_label_req_bach_clearing_option" aria-label="Default select example">
-                                                        <option selected>BACH Clearing...</option>
-                                                        <option value="1">ID Creation</option>
-                                                        <option value="2">Password Reset</option>
-                                                        <option value="3">Deactivate ID</option>
-                                                        <option value="4">Modification</option>
-                                                        <option value="5">Unlock</option>
-                                                      </select>
+                                            <div class="col-sm-2">
+                                                <p class="text generic-text-size text-danger">Request For</p>
                                             </div>
-                                            <div class="col-sm-4">
-                                                <select class="form-select" id="id_label_req_bach_eftn_option" aria-label="Default select example">
-                                                        <option selected>BACH EFTN...</option>
-                                                        <option value="1">ID Creation</option>
-                                                        <option value="2">Password Reset</option>
-                                                        <option value="3">Deactivate ID</option>
-                                                        <option value="4">Modification</option>
-                                                        <option value="5">Unlock</option>
-                                                      </select>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <select class="form-select" id="id_label_req_RTGS_option" aria-label="Default select example">
-                                                        <option selected>RTGS...</option>
-                                                        <option value="1">ID Creation</option>
-                                                        <option value="2">Password Reset</option>
-                                                        <option value="3">Deactivate ID</option>
-                                                        <option value="4">Modification</option>
-                                                        <option value="5">Unlock</option>
-                                                      </select>
+                                            <div class="col-sm-10">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" id="radionButton" type="radio" name="inlineIDCreateRadio" id="inlineBDTRadio1" value="option1">
+                                                    <label class="form-check-label" for="inlineIDcreateRad1">ID Creation</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" id="radionButton" type="radio" name="inlinePassResRadio" id="inlineUSDRadio2" value="option2">
+                                                    <label class="form-check-label" for="inlinePassResetRad2">Password Reset</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" id="radionButton" type="radio" name="inlineDeactRadio" id="inlineGBPRadio2" value="option3">
+                                                    <label class="form-check-label" for="inlineDeactIDPRad2">Deactivate ID</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" id="radionButton" type="radio" name="inlineModifRadio" id="inlineJYPRadio2" value="option4">
+                                                    <label class="form-check-label" for="inlineModifRad2">Modification</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" id="radionButton" type="radio" name="inlineUnlockRadio" id="inlineEURORadio2" value="option5">
+                                                    <label class="form-check-label" for="inlineUnlockRad2">Unlock</label>
+                                                </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -206,7 +195,7 @@
                                     <div class="row">
                                         <div class="col-sm-8">
                                             <div class="input-group input-group-sm">
-                                                <span class="input-group-text btn-danger" id="addon-wrapping" style="width: 26%;">User ID:</span>
+                                                <span class="input-group-text btn-danger" id="addon-wrapping" style="width: 26%;">Existing T24 ID:</span>
                                                 <input type="text" class="form-control" placeholder="Please enter user id" aria-label="LabelUserId" aria-describedby="addon-wrapping">
                                                 <!-- <button class="btn btn-primary" type="submit" id="article-update-button">Update</button> -->
                                             </div>
@@ -215,7 +204,7 @@
                                     <div class="col-sm-12">
                                         <div class="row">
                                             <div class="col-sm-3">
-                                                <p class="text-danger generic-text-size">Reason Password Reset/ <br>ID Deactivation/ <br> Modification/ <br>Unlock<br></p>
+                                                <p class="text-danger generic-text-size">Reason of Password Reset/ ID Deactivation/ Modification/ Unlock</p>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="row">
@@ -257,98 +246,244 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-12">
+                                        <div class="col-sm-6">
+                                            <h6>Operational/ Functional Area</h6>
+                                        </div>
                                         <div class="row">
-                                            <div class="col-sm-6">
-                                                <div class="input-group input-group-sm">
-                                                    <span class="input-group-text " id="addon-wrapping" style="width: 38%;">Existing ID:</span>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" id="radionButton" type="radio" name="inlineExistingRadio" id="inlineExistingRadio1" value="option1">
-                                                        <label class="form-check-label" for="inlineExistingRad1">YES</label>
-                                                    </div>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" id="radionButton" type="radio" name="inlineExistingRadio" id="inlineExistingRadio2" value="option2">
-                                                        <label class="form-check-label" for="inlineExistingRad2">NO</label>
+                                            <div class="row col-sm-12">
+                                                <div class="col-sm-3">
+                                                    <span class="input-group-text" id="addon-wrapping" style="width: 100%; margin:auto; display:table;">Retail</span>
+                                                    <div class="row col-sm-12">
+                                                        <div class="col-sm-6">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="Id_retail_Inputter">
+                                                                <label class="form-check-label" for="defaultCheck1">
+                                                                  Inputter
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="Id_retail_Auth">
+                                                                <label class="form-check-label" for="defaultCheck1">
+                                                                  Authorizer
+                                                                </label>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="input-group input-group-sm">
-                                                    <span class="input-group-text " id="addon-wrapping">If Yes Write Down Existing ID</span>
-                                                    <input type="text" class="form-control" placeholder="Existing ID" aria-label="LabelExistingID" aria-describedby="addon-wrapping">
-                                                    <!-- <button class="btn btn-primary" type="submit" id="article-update-button">Update</button> -->
+                                                <div class="col-sm-3">
+                                                    <span class="input-group-text" id="addon-wrapping" style="width: 100%; margin:auto; display:table;">Credit</span>
+                                                    <div class="row col-sm-12">
+                                                        <div class="col-sm-6">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="Id_retail_Inputter">
+                                                                <label class="form-check-label" for="defaultCheck1">
+                                                                  Inputter
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="Id_retail_Auth">
+                                                                <label class="form-check-label" for="defaultCheck1">
+                                                                  Authorizer
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <span class="input-group-text" id="addon-wrapping" style="width: 100%; margin:auto; display:table;">Retail</span>
+                                                    <div class="row col-sm-12">
+                                                        <div class="col-sm-6">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="Id_retail_Inputter">
+                                                                <label class="form-check-label" for="defaultCheck1">
+                                                                  Inputter
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="Id_retail_Auth">
+                                                                <label class="form-check-label" for="defaultCheck1">
+                                                                  Authorizer
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <span class="input-group-text" id="addon-wrapping" style="width: 100%; margin:auto; display:table;">Retail</span>
+                                                    <div class="row col-sm-12">
+                                                        <div class="col-sm-6">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="Id_retail_Inputter">
+                                                                <label class="form-check-label" for="defaultCheck1">
+                                                                  Inputter
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="Id_retail_Auth">
+                                                                <label class="form-check-label" for="defaultCheck1">
+                                                                  Authorizer
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-sm-8">
-                                                <div class="input-group input-group-sm">
-                                                    <span class="input-group-text " id="addon-wrapping" style="width: 28%;">User Account Type:</span>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" id="radionButton" type="radio" name="inlineUAccountRadio" id="inlineUAccountRadio1" value="option1">
-                                                        <label class="form-check-label" for="inlineUAccountRad1">Inputter</label>
-                                                    </div>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" id="radionButton" type="radio" name="inlineUAccountRadio" id="inlineUAccountRadio2" value="option2">
-                                                        <label class="form-check-label" for="inlineUAccountRad2">Authorizer</label>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-8">
+                                            <div class="col-sm-12">
                                                 <div class="row">
                                                     <div class="col-sm-12">
                                                         <h6>Level for Transaction Limit (As per Inst Circular # 2257)</h6>
                                                     </div>
                                                 </div>
-                                                <div class="row">
+                                                <table class="table table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Privilege</th>
+                                                            <th scope="col">Cash</th>
+                                                            <th scope="col">Transfer</th>
+                                                            <th scope="col">Deposit</th>
+                                                            <th scope="col">Loan</th>
+                                                            <th scope="col">BG</th>
+                                                            <th scope="col">LC</th>
+                                                            <th scope="col">NOSTRO</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Inputter</td>
+                                                            <td>Level - </td>
+                                                            <td>Level - </td>
+                                                            <td>Level - </td>
+                                                            <td>Level - </td>
+                                                            <td> </td>
+                                                            <td> </td>
+                                                            <td>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="Id_Table_Yes">
+                                                                    <label class="form-check-label" for="defaultCheck1">
+                                                                      Yes
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>Authorizer</td>
+                                                            <td>Level - </td>
+                                                            <td>Level - </td>
+                                                            <td>Level - </td>
+                                                            <td>Level - </td>
+                                                            <td> </td>
+                                                            <td> </td>
+                                                            <td>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" value="" id="Id_Table_No">
+                                                                    <label class="form-check-label" for="defaultCheck1">
+                                                                      No
+                                                                    </label>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="row col-sm-12">
+                                                <div class="col-sm-6">
                                                     <div class="input-group input-group-sm">
-                                                        <span class="input-group-text" id="addon-wrapping" style="width: 26%;">Inputter</span>
-                                                        <input type="text" class="form-control" placeholder="Please input" aria-label="LabelInputterIn" aria-describedby="addon-wrapping">
+                                                        <span class="input-group-text " id="addon-wrapping" style="width: 35%;">Limit Setup:</span>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" id="radionButton" type="radio" name="inlineExistingRadio" id="ID_limit_check_input" value="option1">
+                                                            <label class="form-check-label" for="inlineExistingRad1">Inputter</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" id="radionButton" type="radio" name="inlineExistingRadio" id="ID_limit_check_auth" value="option2">
+                                                            <label class="form-check-label" for="inlineExistingRad2">Authorizer</label>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="row">
+                                                <div class="col-sm-6">
                                                     <div class="input-group input-group-sm">
-                                                        <span class="input-group-text" id="addon-wrapping" style="width: 26%;">Authorizer</span>
-                                                        <input type="text" class="form-control" placeholder="Please authorize" aria-label="LabelAuthorizerIn" aria-describedby="addon-wrapping">
+                                                        <span class="input-group-text " id="addon-wrapping" style="width: 35%;"></span>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" id="radionButton" type="radio" name="inlineExistingRadio" id="ID_limit_check_input" value="option1">
+                                                            <label class="form-check-label" for="inlineExistingRad1">Inputter</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" id="radionButton" type="radio" name="inlineExistingRadio" id="ID_limit_check_auth" value="option2">
+                                                            <label class="form-check-label" for="inlineExistingRad2">Authorizer</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row col-sm-12">
+                                                <div class="col-sm-6">
+                                                    <div class="input-group input-group-sm">
+                                                        <span class="input-group-text " id="addon-wrapping" style="width: 35%;">Central & Right</span>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" id="radionButton" type="radio" name="inlineExistingRadio" id="ID_limit_check_input" value="option1">
+                                                            <label class="form-check-label" for="inlineExistingRad1">Inputter</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" id="radionButton" type="radio" name="inlineExistingRadio" id="ID_limit_check_auth" value="option2">
+                                                            <label class="form-check-label" for="inlineExistingRad2">Authorizer</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="input-group input-group-sm">
+                                                        <span class="input-group-text " id="addon-wrapping" style="width: 35%;"></span>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" id="radionButton" type="radio" name="inlineExistingRadio" id="ID_limit_check_input" value="option1">
+                                                            <label class="form-check-label" for="inlineExistingRad1">Inputter</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" id="radionButton" type="radio" name="inlineExistingRadio" id="ID_limit_check_auth" value="option2">
+                                                            <label class="form-check-label" for="inlineExistingRad2">Authorizer</label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col-sm-2">
-                                                <p class="text generic-text-size">Operational Currency</p>
-                                            </div>
-                                            <div class="col-sm-10">
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" id="radionButton" type="radio" name="inlineCurrencyRadio" id="inlineBDTRadio1" value="option1">
-                                                    <label class="form-check-label" for="inlineBDTRad1">BDT</label>
+                                            <div class="col-sm-12">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <h6>GP / PL Permission</h6>
+                                                    </div>
                                                 </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" id="radionButton" type="radio" name="inlineCurrencyRadio" id="inlineUSDRadio2" value="option2">
-                                                    <label class="form-check-label" for="inlineUSARad2">USD</label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" id="radionButton" type="radio" name="inlineCurrencyRadio" id="inlineGBPRadio2" value="option3">
-                                                    <label class="form-check-label" for="inlineGBPRad2">GBP</label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" id="radionButton" type="radio" name="inlineCurrencyRadio" id="inlineJYPRadio2" value="option4">
-                                                    <label class="form-check-label" for="inlineJYPRad2">JYP</label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" id="radionButton" type="radio" name="inlineCurrencyRadio" id="inlineEURORadio2" value="option5">
-                                                    <label class="form-check-label" for="inlineEURORad2">EURO</label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" id="radionButton" type="radio" name="inlineCurrencyRadio" id="inlineCADRadio2" value="option6">
-                                                    <label class="form-check-label" for="inlineCADRad2">CAD</label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" id="radionButton" type="radio" name="inlineCurrencyRadio" id="inlineCNYRadio2" value="option7">
-                                                    <label class="form-check-label" for="inlineCNYRad2">CNY</label>
-                                                </div>
+                                                <table class="table table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Own GL Dr.</th>
+                                                            <th scope="col">Own PL Dr.</th>
+                                                            <th scope="col">Other GL Dr.</th>
+                                                            <th scope="col">Own GL Cr.</th>
+                                                            <th scope="col">Own PL Cr.</th>
+                                                            <th scope="col">Other GL Cr.</th>
+                                                            <th scope="col">Other PL Cr.</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td> </td>
+                                                            <td></td>
+                                                            <td> </td>
+                                                            <td> </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
                                         <div class="col-sm-8">
@@ -384,7 +519,7 @@
                                             <td>PA No.</td>
                                         </tr>
                                         <tr>
-                                            <td class="text-nowrap">RGB in-charge/<br> Manager Operation</td>
+                                            <td class="text-nowrap">GB in-charge/<br> Manager Operation</td>
                                             <td>Name</td>
                                             <td>Name Signature</td>
                                             <td>PA No.</td>
